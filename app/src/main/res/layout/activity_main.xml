@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayout"
+    tools:context="com.example.android.quizapplication.MainActivity">
+
+
+    <RelativeLayout style="@style/ToolbarRelativeLayout">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            style="@style/ToolbarTextView"
+            android:text="@string/score" />
+
+        <TextView
+            android:id="@+id/numberOfQuestionTextView"
+            style="@style/ToolbarTextView"
+            android:layout_alignParentRight="true"
+
+            android:text="@string/answare_0_of_10" />
+    </RelativeLayout>
+
+
+    <ScrollView style="@style/ScrollView">
+
+        <LinearLayout style="@style/LinearLayoutWrap">
+
+
+            <RelativeLayout
+                android:id="@+id/introRL"
+                style="@style/RelativeLayout">
+
+
+                <ImageView
+                    android:id="@+id/thinking_monkeyImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/thinking_monkey" />
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    style="@style/TitleTextView"
+                    android:text="@string/how_logical_are_you" />
+
+                <TextView
+                    style="@style/ScrollDown"
+                    android:text="@string/find_out" />
+
+            </RelativeLayout>
+
+
+            <!-- First Question Mary -->
+
+            <LinearLayout
+                android:id="@+id/firstLL"
+                style="@style/LinearLayoutWrap">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/mary_question"
+
+                    />
+
+                <LinearLayout
+                    style="@style/LinearLayout"
+                    android:layout_weight="0">
+
+                    <Button
+                        android:id="@+id/buttonJuly"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="firtstQuestion"
+                        android:text="@string/july"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/buttonAugust"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="firtstQuestion"
+                        android:text="@string/august"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/buttonSeptember"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="firtstQuestion"
+                        android:text="@string/september"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/buttonMary"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="firtstQuestion"
+                        android:text="@string/mary"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Second Question Angelica -->
+
+
+            <LinearLayout
+                android:id="@+id/secondLL"
+                style="@style/LinearLayout">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/ancelica_question" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutWrap"
+                    android:layout_weight="0">
+
+                    <Button
+                        android:id="@+id/button20"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="secondQuestion"
+                        android:text="@string/_20"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button24"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="secondQuestion"
+                        android:text="@string/_24"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button25"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="secondQuestion"
+                        android:text="@string/_25"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button26"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="secondQuestion"
+                        android:text="@string/_26"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button28"
+                        style="@style/ButtonStyle"
+                        android:background="@drawable/bkg"
+                        android:onClick="secondQuestion"
+                        android:text="@string/_28"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--- Third Question CheckBox  -->
+            <LinearLayout
+                android:id="@+id/thirdLL"
+                style="@style/LinearLayoutWrap">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/trustworthy"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/resolute" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/tenacity" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/dependable" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/relevant" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/true1" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/insolent" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/honest" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox8"
+                            style="@style/CheckBoxStyle"
+                            android:text="@string/reliable" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buttonCheckBoxAnswers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/submit_your_answares" />
+
+
+            </LinearLayout>
+
+
+            <!-- Fourth Question Radio Button England -->
+
+            <LinearLayout
+                android:id="@+id/fourthLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/LNGEDNA" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioAnimal"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fourthQuestion"
+                        android:text="@string/animal" />
+
+                    <RadioButton
+                        android:id="@+id/radioCountry"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fourthQuestion"
+                        android:text="@string/country" />
+
+                    <RadioButton
+                        android:id="@+id/radioState"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fourthQuestion"
+                        android:text="@string/state" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioCity"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fourthQuestion"
+                        android:text="@string/city" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioOcean"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fourthQuestion"
+                        android:text="@string/ocean" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <!-- Fifth Question Radio Button Picture -->
+
+            <LinearLayout
+                android:id="@+id/fifthLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/four_sided_figures" />
+
+                <ImageView
+                    android:layout_width="327dp"
+                    android:layout_height="131dp"
+                    android:layout_margin="24dp"
+                    android:src="@drawable/four_sides" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio10"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fifthQuestion"
+                        android:text="@string/_10" />
+
+                    <RadioButton
+                        android:id="@+id/radio16"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fifthQuestion"
+                        android:text="@string/_16" />
+
+                    <RadioButton
+                        android:id="@+id/radio22"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fifthQuestion"
+                        android:text="@string/_22" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio25"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fifthQuestion"
+                        android:text="@string/_25" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio28"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="fifthQuestion"
+                        android:text="@string/_28" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <!-- Sixth Question Radio Button  -->
+
+            <LinearLayout
+                android:id="@+id/sixthLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/razzies_lazzies_bloops" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioTrue"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="sixthQuestion"
+                        android:text="@string/true2" />
+
+                    <RadioButton
+                        android:id="@+id/radioFalse"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="sixthQuestion"
+                        android:text="@string/false2" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Seventh Question Radio Button  -->
+
+            <LinearLayout
+                android:id="@+id/seventhLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/the_least_like" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioPoem"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="seventhQuestion"
+                        android:text="@string/poem" />
+
+                    <RadioButton
+                        android:id="@+id/radioNovel"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="seventhQuestion"
+                        android:text="@string/novel" />
+
+                    <RadioButton
+                        android:id="@+id/radioPainting"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="seventhQuestion"
+                        android:text="@string/painting" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioStatue"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="seventhQuestion"
+                        android:text="@string/statue" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioFlower"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="seventhQuestion"
+                        android:text="@string/flower" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <!-- Eighth Question Radio Button  -->
+
+            <LinearLayout
+                android:id="@+id/eightLL"
+                style="@style/LinearLayout">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/different_from_others" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioGoogle"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="eighthQuestion"
+                        android:text="@string/google" />
+
+                    <RadioButton
+                        android:id="@+id/radioFirefox"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="eighthQuestion"
+                        android:text="@string/firefox" />
+
+                    <RadioButton
+                        android:id="@+id/radioInternetExplorer"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="eighthQuestion"
+                        android:text="@string/internetexplorer" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioSafari"
+                        style="@style/RadioButtonStyle"
+                        android:onClick="eighthQuestion"
+                        android:text="@string/safari" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Ninth Question Radio Button  -->
+
+            <LinearLayout
+                android:id="@+id/ninethLL"
+                style="@style/LinearLayout">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/a_genius_can_crack_this_one_in_just_10" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:src="@drawable/genious" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        style="@style/RadioButtonPlainStyle"
+                        android:onClick="ninthQuestion" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        style="@style/RadioButtonPlainStyle"
+                        android:onClick="ninthQuestion" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        style="@style/RadioButtonPlainStyle"
+                        android:onClick="ninthQuestion" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        style="@style/RadioButtonPlainStyle"
+                        android:onClick="ninthQuestion" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio5"
+                        style="@style/RadioButtonPlainStyle"
+                        android:onClick="ninthQuestion" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <!-- Tenth Question Radio Button  -->
+
+            <LinearLayout
+                android:id="@+id/tenthLL"
+                style="@style/LinearLayout">
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/race" />
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@android:color/holo_green_dark"
+                    android:hint="@string/type_here_your_answare" />
+
+
+                <Button
+                    android:id="@+id/buttonSubmitAnsware"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="tenthQuestion"
+                    android:text="@string/submit_your_answare" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/einstenImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/einstein"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/maximumTextView"
+                style="@style/FinalText"
+                android:text="@string/max_score" />
+
+            <ImageView
+                android:id="@+id/almostImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/almost_genious"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/almostTextView"
+                style="@style/FinalText"
+                android:text="@string/almost_genous" />
+
+
+            <ImageView
+                android:id="@+id/averageImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/average"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/averageTextView"
+                style="@style/FinalText"
+                android:text="@string/avrage" />
+
+            <ImageView
+                android:id="@+id/thinkTwiceImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/think_twice"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/thinkTwiceTextView"
+                style="@style/FinalText"
+                android:text="@string/missed_few" />
+
+            <ImageView
+                android:id="@+id/error404ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/error404"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/error404TextView"
+                style="@style/FinalText"
+                android:text="@string/lwol" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
