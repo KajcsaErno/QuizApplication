@@ -14,6 +14,7 @@ This project is about combining various ideas and skills I’ve been practicing 
 * Commenting and documenting your code.
 
 ## Final result of my project - How logical are you?
+Try it yourself: *[QuizzApp.apk](https://www.mediafire.com/file/ypi3fazrmq46df0/QuzzAppV3.apk/file)*
 
 [![image](https://user-images.githubusercontent.com/31850356/113477439-fcecc700-9481-11eb-9c5a-885e3880c831.png)](https://www.youtube.com/watch?v=EGPu-ZLHEPI)
 [![image](https://user-images.githubusercontent.com/31850356/113477468-23126700-9482-11eb-9e19-2ccb11171998.png)](https://www.youtube.com/watch?v=EGPu-ZLHEPI)
